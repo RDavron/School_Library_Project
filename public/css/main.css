@@ -1,0 +1,103 @@
+html {
+    font-size: 90%;
+    line-height: 1.8;
+    list-style-position: inside;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+    width: 360px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #cacaca;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background: #fafafa;
+}
+header .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .brand {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation .tag {
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.tag {
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #D6E6F2;
+  min-width: 30px;
+  margin: auto;
+}
+
+.tag:hover {
+  background-color: #D6E6F2;
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #D6E6F2;
+  font-weight: bold;
+}
+.tag:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.search{
+  padding: 8em;
+}
+.title{
+  font-size: 20px;
+}
+.p{
+  margin-bottom: 5em;
+}

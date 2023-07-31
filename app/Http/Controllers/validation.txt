@@ -1,0 +1,42 @@
+Member用validation 
+ 
+ $this->validate($request, [
+            'name' => 'required|max:50',
+            'email' => 'required|email',
+            'address' => 'required|max:100',
+            'tel' => 'digits_between:10,11',
+            'birthday' => 'required'|'date',
+            'deleted_at' => 'date'
+        ]);
+
+documents用validation 
+ $this->validate($request, [
+            'ISBN_number' => 'required|digits_between:10,13|unique:documents,ISBN_number',
+            'document_name' => 'required|max:150',
+            'code' => 'required|integer|between:0,9',
+            'author' => 'max:100',
+            'publisher' => 'max:100',
+            'publisher_date' => 'date'
+            
+        ]);
+
+stock用validation 
+ $this->validate($request, [
+            'ISBN_number' => 'required|digits_between:10,13',
+            'document_name' => 'required|max:150',
+            'arrival_date' => 'required|date',
+            'waste_date' => 'date',
+            'remark' => 'max:150'
+            
+        ]);
+
+rends用validation
+  $this->validate($request, [
+            'member_id' => 'required|exists:members,id',
+            'document_id' => 'required|exists:stock,id',
+            'lend_date' => 'required|date',
+            'due_date' => 'required|date',
+            'return_date' => 'date',
+            'remark' => 'max:150'
+            
+        ]);

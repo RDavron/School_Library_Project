@@ -1,0 +1,55 @@
+
+/********* HOME PAGE ************/
+.button-display {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+    width: min(95%, 17rem);
+    margin: 4em auto;
+    padding: 2.5em;
+
+}
+
+a{
+    display: block;
+}
+
+.btn{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+    background: #374955;
+    line-height: 1.15;
+    font-size: 16px;
+    width: -webkit-fill-available
+}
+
+
+.button:hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+
+/********* LOGIN PAGE & REGISTRATION PAGE ************/
+.log{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+    background: #374955;
+    line-height: 1.15;
+    font-size: 16px;
+}
+
+.return-btn{
+    padding: 1px;
+}

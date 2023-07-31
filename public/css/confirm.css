@@ -1,0 +1,86 @@
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  width: 500px;
+}
+
+ th {
+  display: block;
+
+  padding: 10px;
+  border: solid 1px #778ca3;
+  background: #778ca3;
+  color: #ffffff;
+ }
+
+ td {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: solid 1px #778ca3;
+  background: #e9faf9;
+ }
+.top{
+  display: flex;
+}
+
+.btn{
+  margin-top: 10px;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,300");
+
+.btn-btn{
+  background-color: #3b97ad;
+  padding: 6px 20px 6px 16px;
+  border: 1px solid #3b97ad;
+  border-radius: 3px;
+  color: #F5F5F5;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btn-btn:before{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #3b97ad;
+  left: -6px;
+  top: -9px;
+  border-radius: 4px;
+  -webkit-transform: rotate(135deg);
+  clip: rect(26px, 50px, 50px, 27px);
+  box-shadow: inset 0px -1px 0 #C85440, inset -1px 0px 0 #C85440, inset 0px -2px 0 rgba(255,255,255, .2);
+}
+
+.btn-btn:hover{
+  background: #FC6C56;
+}
+
+.btn-btn:hover:before{
+  background: #FC6C56;
+}
+
+.btn-btn:active{
+  background: #E56A57;
+}
+
+.btn-btn:active:before{
+  background: #E56A57;
+}
+
+.div-btn{
+  margin-top: 9px;
+}
+
+h1{
+  text-align: center;
+}
